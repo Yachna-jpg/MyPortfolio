@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yachna Gupta - Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Yachna Gupta, a Full Stack Developer.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Space+Mono:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tech Icons (Devicon) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-glow"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">YG.</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#find-me" class="nav-link">Connect</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="#" class="btn btn-outline download-btn">
+                    <i data-lucide="download"></i> Resume
+                </a>
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+            <ul class="mobile-links">
+                <li><a href="#home" class="mobile-link active">Home</a></li>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#skills" class="mobile-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#education" class="mobile-link">Education</a></li>
+                <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+                <li><a href="#find-me" class="mobile-link">Connect</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <div class="greeting">
+                        <span class="greeting-badge">
+                            <span class="status-dot"></span> Open to Work
+                        </span>
+                        <p>Hi, I'm</p>
+                    </div>
+                    <h1 class="hero-title">
+                        Yachna <span class="text-gradient">Gupta</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Full Stack Developer
+                    </h2>
+                    <p class="hero-description">
+                        I build scalable web applications from seamless frontend interfaces to robust backend systems using contemporary technologies.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary magnetic-btn">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary magnetic-btn">Contact Me</a>
+                    </div>
+                    <div class="hero-contact-info" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; font-family: sans-serif;">
+                        <a href="mailto:yachnagupta0@gmail.com" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
+                            <i data-lucide="mail" style="width: 20px; height: 20px; color: #3b82f6;"></i> yachnagupta0@gmail.com
+                        </a>
+                        <a href="tel:+916289356522" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
+                            <i data-lucide="phone" style="width: 20px; height: 20px; color: #10b981;"></i> 6289356522
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="X" class="social-icon"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="workspace-wrapper">
+                        <img src="assets/workspace.png" alt="Developer Workspace" class="workspace-img">
+                        <!-- Floating Tech Badges -->
+                        <div class="float-badge python"><i class="devicon-python-plain colored"></i></div>
+                        <div class="float-badge fastapi"><i class="devicon-fastapi-plain colored"></i></div>
+                        <div class="float-badge react"><i class="devicon-react-original colored"></i></div>
+                        <div class="float-badge postgres"><i class="devicon-postgresql-plain colored"></i></div>
+                        <div class="float-badge git"><i class="devicon-git-plain colored"></i></div>
+                        <div class="float-badge docker"><i class="devicon-docker-plain colored"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section-sm">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="folder-git-2"></i></div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="code-2"></i></div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="clock"></i></div>
+                        <div class="stat-number" data-target="2000">0</div>
+                        <div class="stat-label">Hours of Coding</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="calendar"></i></div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i data-lucide="award"></i></div>
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container about-container">
+                <div class="about-left">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <p class="about-text">
+                       I am a Full Stack Developer passionate about building modern, scalable, and user-friendly web applications. I enjoy transforming ideas into responsive, high-performance digital experiences using both frontend and backend technologies. With experience in JavaScript, React, Node.js, Express.js, and MongoDB, I focus on writing clean, maintainable code and developing efficient solutions to real-world problems. I am always eager to learn new technologies, improve my skills, and contribute to impactful projects.
+                    </p>
+                    <p class="about-text">
+                        My philosophy is built on writing clean, maintainable code and solving complex problems with elegant technical solutions. I thrive in environments that challenge me to constantly learn and adapt to new technologies.
+                    </p>
+                    <a href="#contact" class="btn btn-outline mt-4">More About Me</a>
+                </div>
+                
+                <div class="about-right">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i data-lucide="server"></i></div>
+                            <h3>Full Stack Development</h3>
+                            <p>Building scalable APIs and modern frontend interfaces.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i data-lucide="puzzle"></i></div>
+                            <h3>Problem Solving</h3>
+                            <p>Breaking complex problems into efficient solutions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i data-lucide="layers"></i></div>
+                            <h3>Clean Architecture</h3>
+                            <p>Writing maintainable and scalable software.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i data-lucide="book-open"></i></div>
+                            <h3>Continuous Learning</h3>
+                            <p>Always learning new technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="skills-header text-center">
+                    <h2 class="section-title">Tech Stack & <span class="text-gradient">Skills</span></h2>
+                    <p class="section-subtitle">Technologies I use to build robust, scalable applications.</p>
+                </div>
+                
+                <div class="dashboard-layout one-row">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card" data-glow>
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #3b82f6;"><i data-lucide="terminal"></i></div>
+                            <div>
+                                <h3>Programming Languages</h3>
+                                <p>Core languages</p>
+                            </div>
+                        </div>
+                        <div class="chips-container">
+                            <div class="tech-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div class="tech-chip"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                            <div class="tech-chip"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                            <div class="tech-chip"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card" data-glow>
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #a855f7;"><i data-lucide="database-zap"></i></div>
+                            <div>
+                                <h3>Backend</h3>
+                                <p>Core Technologies</p>
+                            </div>
+                        </div>
+                        <div class="chips-container">
+                            <div class="tech-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div class="tech-chip"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                            <div class="tech-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                            <div class="tech-chip"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+                            <div class="tech-chip"><i class="devicon-networkx-plain colored"></i><span>REST API</span></div>
+                            <div class="tech-chip"><i class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></div>
+                            <div class="tech-chip"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card" data-glow>
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #06b6d4;"><i data-lucide="database"></i></div>
+                            <div>
+                                <h3>Databases</h3>
+                                <p>Data storage</p>
+                            </div>
+                        </div>
+                        <div class="chips-container">
+                            <div class="tech-chip"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                            <div class="tech-chip"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="skill-category-card" data-glow>
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #f43f5e;"><i data-lucide="wrench"></i></div>
+                            <div>
+                                <h3>Tools</h3>
+                                <p>Development utilities</p>
+                            </div>
+                        </div>
+                        <div class="chips-container">
+                            <div class="tech-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div class="tech-chip"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+                            <div class="tech-chip"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                            <div class="tech-chip"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                            <div class="tech-chip"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category-card" data-glow>
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #eab308;"><i data-lucide="layout"></i></div>
+                            <div>
+                                <h3>Web Technologies</h3>
+                                <p>Frontend & Frameworks</p>
+                            </div>
+                        </div>
+                        <div class="chips-container">
+                            <div class="tech-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                            <div class="tech-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                            <div class="tech-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                            <div class="tech-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
+                            <div class="tech-chip"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Project 1 -->
+                    <div class="feature-card" style="display: flex; flex-direction: column;">
+                        <div style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border);">
+                            <i data-lucide="image" style="color: var(--text-muted); width: 40px; height: 40px;"></i>
+                        </div>
+                        <h3>Project Name 1</h3>
+                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A brief description of what this project does, the technologies used, and the problem it solves.</p>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="github" style="width: 16px; height: 16px;"></i> Code</a>
+                            <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Demo</a>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="linkedin" style="width: 16px; height: 16px;"></i> Post</a>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="twitter" style="width: 16px; height: 16px;"></i> Tweet</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="feature-card" style="display: flex; flex-direction: column;">
+                        <div style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border);">
+                            <i data-lucide="image" style="color: var(--text-muted); width: 40px; height: 40px;"></i>
+                        </div>
+                        <h3>Project Name 2</h3>
+                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A brief description of what this project does, the technologies used, and the problem it solves.</p>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="github" style="width: 16px; height: 16px;"></i> Code</a>
+                            <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Demo</a>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="linkedin" style="width: 16px; height: 16px;"></i> Post</a>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="twitter" style="width: 16px; height: 16px;"></i> Tweet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                </div>
+                <div class="dashboard-layout" style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+                    <div class="feature-card">
+                        <h3>Government College of Engineering and Leather Technology</h3>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem;">B.Tech / Bachelor's Degree</p>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">CGPA: 7.1</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>12th Grade (Higher Secondary)</h3>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score: 87%</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>10th Grade (Secondary)</h3>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score: 77%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-premium-section">
+            <div class="cert-container">
+                <div class="cert-header">
+                    <h2 class="cert-title">My <span class="cert-gradient-text">Certifications</span></h2>
+                    <div class="cert-divider">
+                        <div class="cert-dot"></div>
+                    </div>
+                    <p class="cert-subtitle">Hackathons & Achievements</p>
+                </div>
+
+                <div class="cert-layout">
+                    <!-- Column 1: Timeline -->
+                    <div class="cert-timeline-col">
+                        <div class="cert-timeline-line"></div>
+                        <div class="cert-timeline-node-container">
+                            <div class="cert-timeline-node"></div>
+                        </div>
+                        <div class="cert-timeline-node-container">
+                            <div class="cert-timeline-node"></div>
+                        </div>
+                        <div class="cert-timeline-node-container">
+                            <div class="cert-timeline-node"></div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Cards -->
+                    <div class="cert-cards-col">
+                        <!-- Item 1 -->
+                        <div class="cert-card">
+                            <div class="cert-card-left">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="file-badge"></i>
+                                </div>
+                            </div>
+                            <div class="cert-card-center">
+                                <h3>Certificate of Participation in Cosmohack1</h3>
+                                <p class="cert-org">Unstop</p>
+                                <div class="cert-year-wrapper">
+                                    <i data-lucide="calendar"></i>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                            </div>
+                            <div class="cert-card-right">
+                                <a href="./assets/cosmohack-cert.jpg" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="cert-card">
+                            <div class="cert-card-left">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="file-badge"></i>
+                                </div>
+                            </div>
+                            <div class="cert-card-center">
+                                <h3>Hack Aura</h3>
+                                <p class="cert-org">United Latino Students Association</p>
+                                <div class="cert-year-wrapper">
+                                    <i data-lucide="calendar"></i>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                            </div>
+                            <div class="cert-card-right">
+                                <a href="./assets/hackaura-cert.png" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="cert-card">
+                            <div class="cert-card-left">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="file-badge"></i>
+                                </div>
+                            </div>
+                            <div class="cert-card-center">
+                                <h3>Hackforge JUSL Hackathon</h3>
+                                <p class="cert-org">JUSL</p>
+                                <div class="cert-year-wrapper">
+                                    <i data-lucide="calendar"></i>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                            </div>
+                            <div class="cert-card-right">
+                                <a href="./assets/hackforge-cert.png" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Me Section -->
+        <section id="find-me" class="find-me-section">
+            <div class="find-me-stars"></div>
+            <div class="find-me-glow"></div>
+            <div class="find-me-content">
+                <h2 class="find-me-title">Find Me On</h2>
+                <p class="find-me-subtitle">Feel free to <span>connect</span> with me</p>
+                <div class="find-me-socials">
+                    <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer" class="find-me-btn" aria-label="GitHub">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank" rel="noopener noreferrer" class="find-me-btn" aria-label="LinkedIn">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- UI Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
