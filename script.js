@@ -150,4 +150,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.1 });
         certObserver.observe(certSection);
     }
+
+    // --- Resume Modal Logic ---
+    const resumeModal = document.getElementById('resumeModal');
+    const openResumeModalBtn = document.getElementById('openResumeModal');
+    const closeResumeModalBtn = document.getElementById('closeResumeModal');
+
+    if (openResumeModalBtn && resumeModal && closeResumeModalBtn) {
+        openResumeModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            resumeModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            
+            // Render Lucide icons in case the modal icon needs rendering
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        });
+
+        closeResumeModalBtn.addEventListener('click', () => {
+            resumeModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on clicking outside the modal content
+        resumeModal.addEventListener('click', (e) => {
+            if (e.target === resumeModal) {
+                resumeModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });

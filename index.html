@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yachna Gupta - Full Stack Developer</title>
     <meta name="description" content="Portfolio of Yachna Gupta, a Full Stack Developer.">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Space+Mono:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <!-- Tech Icons (Devicon) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Background Effects -->
     <div class="bg-grid"></div>
     <div class="bg-noise"></div>
     <div class="bg-glow"></div>
-    
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -40,9 +44,9 @@
                 <button class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="moon"></i>
                 </button>
-                <a href="#" class="btn btn-outline download-btn">
+                <button id="openResumeModal" class="btn btn-outline download-btn">
                     <i data-lucide="download"></i> Resume
-                </a>
+                </button>
                 <button class="mobile-menu-btn" aria-label="Open Menu">
                     <i data-lucide="menu"></i>
                 </button>
@@ -87,27 +91,35 @@
                         Full Stack Developer
                     </h2>
                     <p class="hero-description">
-                        I build scalable web applications from seamless frontend interfaces to robust backend systems using contemporary technologies.
+                        I build scalable web applications from seamless frontend interfaces to robust backend systems
+                        using contemporary technologies.
                     </p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary magnetic-btn">View My Work</a>
                         <a href="#contact" class="btn btn-secondary magnetic-btn">Contact Me</a>
                     </div>
-                    <div class="hero-contact-info" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; font-family: sans-serif;">
-                        <a href="mailto:yachnagupta0@gmail.com" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
-                            <i data-lucide="mail" style="width: 20px; height: 20px; color: #3b82f6;"></i> yachnagupta0@gmail.com
+                    <div class="hero-contact-info"
+                        style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; font-family: var(--font-mono);">
+                        <a href="mailto:yachnagupta0@gmail.com"
+                            style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
+                            <i data-lucide="mail" style="width: 20px; height: 20px; color: var(--accent-blue);"></i>
+                            yachnagupta0@gmail.com
                         </a>
-                        <a href="tel:+916289356522" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
-                            <i data-lucide="phone" style="width: 20px; height: 20px; color: #10b981;"></i> 6289356522
+                        <a href="tel:+916289356522"
+                            style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none; font-size: 1.1rem;">
+                            <i data-lucide="phone" style="width: 20px; height: 20px; color: var(--accent-primary);"></i> 6289356522
                         </a>
                     </div>
                     <div class="hero-socials">
-                        <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i data-lucide="github"></i></a>
-                        <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i data-lucide="linkedin"></i></a>
+                        <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" class="social-icon"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i
+                                data-lucide="linkedin"></i></a>
                         <a href="#" aria-label="X" class="social-icon"><i data-lucide="twitter"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="hero-right">
                     <div class="workspace-wrapper">
                         <img src="assets/workspace.png" alt="Developer Workspace" class="workspace-img">
@@ -158,20 +170,34 @@
 
         <!-- About Section -->
         <section id="about" class="about section">
-            <div class="container about-container">
+            <div class="container about-grid">
+                <!-- Column 1: Left -->
                 <div class="about-left">
                     <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
                     <p class="about-text">
-                       I am a Full Stack Developer passionate about building modern, scalable, and user-friendly web applications. I enjoy transforming ideas into responsive, high-performance digital experiences using both frontend and backend technologies. With experience in JavaScript, React, Node.js, Express.js, and MongoDB, I focus on writing clean, maintainable code and developing efficient solutions to real-world problems. I am always eager to learn new technologies, improve my skills, and contribute to impactful projects.
+                        I am a Full Stack Developer passionate about building modern, scalable, and user-friendly web
+                        applications. I enjoy transforming ideas into responsive, high-performance digital experiences
+                        using both frontend and backend technologies. With experience in JavaScript, React, Node.js,
+                        Express.js, and MongoDB, I focus on writing clean, maintainable code and developing efficient
+                        solutions to real-world problems. I am always eager to learn new technologies, improve my
+                        skills, and contribute to impactful projects.
                     </p>
                     <p class="about-text">
-                        My philosophy is built on writing clean, maintainable code and solving complex problems with elegant technical solutions. I thrive in environments that challenge me to constantly learn and adapt to new technologies.
+                        My philosophy is built on writing clean, maintainable code and solving complex problems with
+                        elegant technical solutions. I thrive in environments that challenge me to constantly learn and
+                        adapt to new technologies.
                     </p>
                     <a href="#contact" class="btn btn-outline mt-4">More About Me</a>
                 </div>
-                
+
+                <!-- Column 2: Center -->
+                <div class="about-fan">
+                    <img src="assets/Decorative%20Neon%20Fan.png" alt="Decorative Neon Fan">
+                </div>
+
+                <!-- Column 3: Right -->
                 <div class="about-right">
-                    <div class="feature-grid">
+                    <div class="feature-grid about-features">
                         <div class="feature-card">
                             <div class="feature-icon"><i data-lucide="server"></i></div>
                             <h3>Full Stack Development</h3>
@@ -204,12 +230,12 @@
                     <h2 class="section-title">Tech Stack & <span class="text-gradient">Skills</span></h2>
                     <p class="section-subtitle">Technologies I use to build robust, scalable applications.</p>
                 </div>
-                
+
                 <div class="dashboard-layout one-row">
                     <!-- Programming Languages -->
                     <div class="skill-category-card" data-glow>
                         <div class="category-header">
-                            <div class="category-icon" style="color: #3b82f6;"><i data-lucide="terminal"></i></div>
+                            <div class="category-icon" style="color: var(--accent-primary);"><i data-lucide="terminal"></i></div>
                             <div>
                                 <h3>Programming Languages</h3>
                                 <p>Core languages</p>
@@ -226,7 +252,7 @@
                     <!-- Backend -->
                     <div class="skill-category-card" data-glow>
                         <div class="category-header">
-                            <div class="category-icon" style="color: #a855f7;"><i data-lucide="database-zap"></i></div>
+                            <div class="category-icon" style="color: var(--accent-blue);"><i data-lucide="database-zap"></i></div>
                             <div>
                                 <h3>Backend</h3>
                                 <p>Core Technologies</p>
@@ -234,11 +260,15 @@
                         </div>
                         <div class="chips-container">
                             <div class="tech-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-                            <div class="tech-chip"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                            <div class="tech-chip"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span>
+                            </div>
                             <div class="tech-chip"><i class="devicon-django-plain colored"></i><span>Django</span></div>
-                            <div class="tech-chip"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
-                            <div class="tech-chip"><i class="devicon-networkx-plain colored"></i><span>REST API</span></div>
-                            <div class="tech-chip"><i class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></div>
+                            <div class="tech-chip"><i class="devicon-flask-original colored"></i><span>Flask</span>
+                            </div>
+                            <div class="tech-chip"><i class="devicon-networkx-plain colored"></i><span>REST API</span>
+                            </div>
+                            <div class="tech-chip"><i
+                                    class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></div>
                             <div class="tech-chip"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
                         </div>
                     </div>
@@ -246,7 +276,7 @@
                     <!-- Databases -->
                     <div class="skill-category-card" data-glow>
                         <div class="category-header">
-                            <div class="category-icon" style="color: #06b6d4;"><i data-lucide="database"></i></div>
+                            <div class="category-icon" style="color: var(--accent-purple);"><i data-lucide="database"></i></div>
                             <div>
                                 <h3>Databases</h3>
                                 <p>Data storage</p>
@@ -254,14 +284,15 @@
                         </div>
                         <div class="chips-container">
                             <div class="tech-chip"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-                            <div class="tech-chip"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                            <div class="tech-chip"><i
+                                    class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
                         </div>
                     </div>
-                    
+
                     <!-- Tools -->
                     <div class="skill-category-card" data-glow>
                         <div class="category-header">
-                            <div class="category-icon" style="color: #f43f5e;"><i data-lucide="wrench"></i></div>
+                            <div class="category-icon" style="color: var(--accent-primary);"><i data-lucide="wrench"></i></div>
                             <div>
                                 <h3>Tools</h3>
                                 <p>Development utilities</p>
@@ -269,9 +300,12 @@
                         </div>
                         <div class="chips-container">
                             <div class="tech-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-                            <div class="tech-chip"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
-                            <div class="tech-chip"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
-                            <div class="tech-chip"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                            <div class="tech-chip"><i class="devicon-github-original colored"></i><span>GitHub</span>
+                            </div>
+                            <div class="tech-chip"><i class="devicon-vscode-plain colored"></i><span>VS Code</span>
+                            </div>
+                            <div class="tech-chip"><i class="devicon-postman-plain colored"></i><span>Postman</span>
+                            </div>
                             <div class="tech-chip"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
                         </div>
                     </div>
@@ -279,7 +313,7 @@
                     <!-- Web Technologies -->
                     <div class="skill-category-card" data-glow>
                         <div class="category-header">
-                            <div class="category-icon" style="color: #eab308;"><i data-lucide="layout"></i></div>
+                            <div class="category-icon" style="color: var(--accent-blue);"><i data-lucide="layout"></i></div>
                             <div>
                                 <h3>Web Technologies</h3>
                                 <p>Frontend & Frameworks</p>
@@ -288,9 +322,12 @@
                         <div class="chips-container">
                             <div class="tech-chip"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
                             <div class="tech-chip"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-                            <div class="tech-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                            <div class="tech-chip"><i class="devicon-react-original colored"></i><span>React</span></div>
-                            <div class="tech-chip"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></div>
+                            <div class="tech-chip"><i
+                                    class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                            <div class="tech-chip"><i class="devicon-react-original colored"></i><span>React</span>
+                            </div>
+                            <div class="tech-chip"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind
+                                    CSS</span></div>
                         </div>
                     </div>
                 </div>
@@ -304,38 +341,59 @@
                     <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
                     <p class="section-subtitle">Some of my recent work</p>
                 </div>
-                <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="feature-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <!-- Project 1 -->
                     <div class="feature-card" style="display: flex; flex-direction: column;">
-                        <div style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
-                            <img src="assets/medigone-image.png" alt="Medi Gone Wild" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
+                            <img src="assets/medigone-image.png" alt="Medi Gone Wild"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>Medi Gone Wild</h3>
-                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">MediGoneWild is an innovative, full-stack hospital web application. It’s built with a Node.js/Express backend, EJS for dynamic server-side rendering, and a PostgreSQL database hosted on Neon. The core of the app is its robust authentication system (email/password + Google OAuth) and an integrated OpenAI-powered chatbot to assist patients. The entire application is deployed live on Vercel.</p>
+                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">MediGoneWild is an
+                            innovative, full-stack hospital web application. It’s built with a Node.js/Express backend,
+                            EJS for dynamic server-side rendering, and a PostgreSQL database hosted on Neon. The core of
+                            the app is its robust authentication system (email/password + Google OAuth) and an
+                            integrated OpenAI-powered chatbot to assist patients. The entire application is deployed
+                            live on Vercel.</p>
                         <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="http://medi-gone-wild.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
+                            <a href="http://medi-gone-wild.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i
+                                    data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
                         </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="feature-card" style="display: flex; flex-direction: column;">
-                        <div style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
-                            <img src="assets/car.png" alt="Car Rental System" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
+                            <img src="assets/car.png" alt="Car Rental System"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>Car Rental System</h3>
-                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A modern, responsive Car Rental Management System website featuring dynamic car listings, search and filter capabilities, and a validated booking form.</p>
+                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A modern, responsive Car
+                            Rental Management System website featuring dynamic car listings, search and filter
+                            capabilities, and a validated booking form.</p>
                         <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="https://rent-car-rose-ten.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
+                            <a href="https://rent-car-rose-ten.vercel.app" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i
+                                    data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
                         </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="feature-card" style="display: flex; flex-direction: column;">
-                        <div style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
-                            <img src="assets/Shophub.png" alt="ShopHub E-Commerce" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="height: 150px; background: var(--card-bg); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--card-border); overflow: hidden;">
+                            <img src="assets/Shophub.png" alt="ShopHub E-Commerce"
+                                style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <h3>ShopHub E-Commerce</h3>
-                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A modern and responsive e-commerce platform built to provide a seamless online shopping experience.</p>
+                        <p style="margin-top: 0.5rem; flex-grow: 1; color: var(--text-muted);">A modern and responsive
+                            e-commerce platform built to provide a seamless online shopping experience.</p>
                         <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="https://e-commerce-hxqs.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
+                            <a href="https://e-commerce-hxqs.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i
+                                    data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -348,19 +406,23 @@
                 <div class="text-center" style="margin-bottom: 3rem;">
                     <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
                 </div>
-                <div class="dashboard-layout" style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+                <div class="dashboard-layout"
+                    style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
                     <div class="feature-card">
                         <h3>Government College of Engineering and Leather Technology</h3>
                         <p style="color: var(--text-muted); margin-top: 0.5rem;">B.Tech / Bachelor's Degree</p>
-                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">CGPA: 8.6</p>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">CGPA:
+                            8.6</p>
                     </div>
                     <div class="feature-card">
                         <h3>12th Grade (Higher Secondary)</h3>
-                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score: 87%</p>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score:
+                            87%</p>
                     </div>
                     <div class="feature-card">
                         <h3>10th Grade (Secondary)</h3>
-                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score: 77%</p>
+                        <p style="margin-top: 1rem; font-weight: 500; font-size: 1.1rem;" class="text-gradient">Score:
+                            77%</p>
                     </div>
                 </div>
             </div>
@@ -410,7 +472,9 @@
                                 </div>
                             </div>
                             <div class="cert-card-right">
-                                <a href="./assets/cosmohack-cert.jpg" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                                <a href="./assets/cosmohack-cert.jpg" target="_blank" rel="noopener noreferrer"
+                                    class="cert-link">View Certificate <i data-lucide="external-link"
+                                        class="external-icon"></i></a>
                             </div>
                         </div>
 
@@ -430,7 +494,9 @@
                                 </div>
                             </div>
                             <div class="cert-card-right">
-                                <a href="./assets/hackaura-cert.png" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                                <a href="./assets/hackaura-cert.png" target="_blank" rel="noopener noreferrer"
+                                    class="cert-link">View Certificate <i data-lucide="external-link"
+                                        class="external-icon"></i></a>
                             </div>
                         </div>
 
@@ -450,7 +516,9 @@
                                 </div>
                             </div>
                             <div class="cert-card-right">
-                                <a href="./assets/hackforge-cert.png" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i data-lucide="external-link" class="external-icon"></i></a>
+                                <a href="./assets/hackforge-cert.png" target="_blank" rel="noopener noreferrer"
+                                    class="cert-link">View Certificate <i data-lucide="external-link"
+                                        class="external-icon"></i></a>
                             </div>
                         </div>
                     </div>
@@ -466,10 +534,12 @@
                 <h2 class="find-me-title">Find Me On</h2>
                 <p class="find-me-subtitle">Feel free to <span>connect</span> with me</p>
                 <div class="find-me-socials">
-                    <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer" class="find-me-btn" aria-label="GitHub">
+                    <a href="https://github.com/Yachna-jpg" target="_blank" rel="noopener noreferrer"
+                        class="find-me-btn" aria-label="GitHub">
                         <i class="devicon-github-original"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank" rel="noopener noreferrer" class="find-me-btn" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/yachna-gupta-1907752aa" target="_blank"
+                        rel="noopener noreferrer" class="find-me-btn" aria-label="LinkedIn">
                         <i class="devicon-linkedin-plain"></i>
                     </a>
                 </div>
@@ -483,8 +553,19 @@
     <script>
         lucide.createIcons();
     </script>
-    
+
+    <!-- Resume Image Modal -->
+    <div id="resumeModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeResumeModal" class="modal-close-btn" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <img src="assets/resume.png" alt="Yachna Gupta Resume" class="modal-image">
+        </div>
+    </div>
+
     <!-- Custom Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
