@@ -298,8 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
               .fromTo('.contact-row', { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }, "-=0.4")
               .fromTo('.social-btn', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.1, ease: "back.out(1.5)" }, "-=0.4")
               .fromTo('.input-group', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" }, "-=0.6");
-              
-            // 3D Tilt Effect
+             // 3D Tilt Effect
             const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
             if (!isTouchDevice) {
                 const tiltCards = document.querySelectorAll('.tilt-card');
@@ -439,4 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cursorGlow.style.top = `${e.clientY}px`;
         });
     }
+
+
 });
